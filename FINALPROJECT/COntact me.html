@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Contact Information (Bee Travel's)</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+
+
+
+<div id="Square2">
+<h2>Sign Up with the form below to reveive emails every months!</h2>
+
+<form action="mailto:beatriceg3@educbe.ca" method="post" enctype="text/plain">
+<p ><label for="name">First Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" /></p>
+
+<p ><label for="name">Last Name:</label>
+
+<input type="text" id="name" name="Last name" placeholder="Enter your Last name" /></p>
+              
+
+
+<p ><label for="name">Email:</label><br>
+<input type="text" id="name" name="Email" placeholder="Enter your Email" /></p>
+
+<input type="submit" value="Press Send To Sign Up" />
+
+</form>
+<h3>If you need to take any notes, you have space down below.</h3>
+
+    <div id = 'keyboard'>
+    </div>
+    
+    <div id = 'textbox'>
+    </div>
+    <div ='button5'></div>
+
+<script>
+    var alpha = ['q','w','e','r','t','y','u','i','o','p','a','s',
+         'd','f','g','h','j','k','l',';','\'',
+         'z','x','c','v','b','n','m', ',','.','Space'];
+    
+     makeKeyBoard();   
+     function makeButton(write){
+        var buttonText = document.createElement("button");
+        buttonText.innerHTML = write;
+        document.getElementById("keyboard").appendChild(buttonText);
+        buttonText.addEventListener("click", makeText)
+     }
+    
+    function makeKeyBoard()
+     {
+        
+         for(var i = 1; i < alpha.length + 1; i++)
+         {
+             makeButton(alpha[i - 1]);
+             if(i % 10 == 0)
+             {
+                 var line = document.createElement("br");
+                 document.getElementById('keyboard').append(line);
+             }
+         }
+     }
+    
+     function makeText()
+     {
+         if(this.innerHTML == "Space")
+         {
+             document.getElementById('textbox').append(" ");
+
+         }
+         else
+         {
+             document.getElementById('textbox').append(this.innerHTML);
+         }
+     }
+     
+     
+
+     </script>
+    </div>
+    
+    <div><a href="FINALPRJECT1.html"><img alt="logo" src="Phtos FinalProject/FINALPROJECTLOGO.png" id="logo"></a></div>
+    
+</body>
+</html>

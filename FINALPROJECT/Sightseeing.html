@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sightseeing</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="Square">
+<p>
+    <b>Old-Port of Montréal</b><br>
+    One of my all time favorite places in Montréal is The Old-Port of Montréal. It is over 2km long and faces the St-Laurent River. The Port offers cycling, walking, roller blading and much more. It has many different exhibits that come and settle on the Port, for the summer heat and tourists. During the winter there are different festivals such as Igloofest and The festival Montréal en Lumière.
+<div><img src="Phtos FinalProject/oldport.png"></div>
+</p>
+</div>
+
+<div id="Square2">
+<p>
+    <b>The Notre-Dame Basilica of Montréal</b><br>
+    The church is located at 110 Notre-Dame Street West, at the corner of Saint Sulpice Street. The church is a very important sightseeing area. It has had over 11 million visitors every year. The church was built in 1672, by the Roman Catholic Sulpicians.
+
+</p>
+<div><img src="Phtos FinalProject/basilica.png"></div>
+</div>
+
+<div id="Square">
+<p>
+    <b>The Montréal Museum of Fine Arts</b><br>
+    The museum was established on April 23, 1860, over 162 years ago. It receives over 1 million tourists every year and is classic in Montréal. It has beautiful pieces of art. It is the largest art gallery in Canada and the oldest museum too. In 2020, it was the most visited museum in Canada.
+<div><img src="Phtos FinalProject/museum.png"></div>
+</p>
+</div>
+
+<div id="Square2">
+<p>
+    <b>The Mont-Royal</b><br>
+    Mont-Royal is a hill in Montréal. You can walk, hike and bike on different trails that are offered on the hill. The St-Joseph Oratoire is located on the hill. 
+<div><img src="Phtos FinalProject/mont roal.png"></div>
+</p>
+</div>
+
+
+
+
+
+
+<div><a href="TravelPage.html"><img alt="logo" src="Phtos FinalProject/FINALPROJECTLOGO.png" id="logo"></a></div>
+
+
+<button onclick="gototopFunction()" id="buttonstyle" title="Go to top">Click to go back to the top!</button>
+
+    <script>
+
+let scrollupbutton = document.getElementById("buttonstyle");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollupbutton.style.display = "block";
+  } else {
+    scrollupbutton.style.display = "none";
+  }
+}
+
+
+function gototopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+</html>

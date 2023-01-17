@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head><title>Restaurants</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="Square">
+<p>
+    <b>Reuben’s Deli and Steakhouse</b><br>
+    This restaurant is known for its smoked meat sandwiches in Montréal. It is located on St-Catherine Road in downtown Montréal. Many locals love this restaurant and the service is great.
+</p>
+<div><img src="Phtos FinalProject/reubens.png"></div>
+</div>
+
+<div id="Square2">
+<p>
+    <b>Vin Mon Lapin</b><br>
+    Mon Lapin is a well known chic restaurant in Montréal. It is situated in downtown Montréal. It serves small fresh market dishes that are in season. The food is very tasty and the service is quick. 
+</p>
+<div><img src="Phtos FinalProject/vinlapin.png"></div>
+</div>
+
+<div id="Square">
+<p>
+    <b>Restaurant Ile Flottante</b><br>
+    Ile Flottante is a restaurant located in downtown Montréal. It serves 3 course meals for only 45$. As Well as a 7 course meal for 85$. The restaurant opens at 5pm almost every single day except on Sundays, Mondays and Tuesdays. The restaurant can have a waiting time of 30 minutes if you do not have a reservation because it is quite popular.
+</p>
+<div><img src="Phtos FinalProject/ileflottante.png"></div>
+</div>
+<div id="Square2">
+<p>
+    <b>Montréal Pool Room</b><br>
+    This dine-in and take out restaurant is a popular place in Montréal. It is a quick and affordable fast-food place on main-street. It serves Montréal style hot-dogs and fries and is known for not having any pool table’s. 
+</p>
+<div><img src="Phtos FinalProject/poolroom.png"></div>
+</div>
+<div id="Square">
+<p>
+    <b>Schwartz Deli</b><br>
+    This restaurant is another one of my favorite places to eat smoked meat in Montréal. It is one of the oldest restaurant place’s in Canada. It is a dine-in, take out and delivery deli. The place serves some of the best sandwiches in my opinion. It’s located on the main street, St-Laurent Road.
+</p>
+<div><img src="Phtos FinalProject/deli.png"></div>
+</div>
+
+
+<div><a href="TravelPage.html"><img alt="logo" src="Phtos FinalProject/FINALPROJECTLOGO.png" id="logo"></a></div>
+
+
+<button onclick="gototopFunction()" id="buttonstyle" title="Go to top">Click to go back to the top!</button>
+
+    <script>
+
+let scrollupbutton = document.getElementById("buttonstyle");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollupbutton.style.display = "block";
+  } else {
+    scrollupbutton.style.display = "none";
+  }
+}
+
+
+function gototopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+</body>
+</html>

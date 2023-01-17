@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bee Travel's</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <ul id = nav-bar>
+        <li><a class="active">Homepage</a></li>
+        <li><a href="TravelPage.html">Destinations</a></li>
+        <li><a href="about me.html">About</a></li>
+        <li><a href="COntact me.html">Contact Us</a></li>
+        <li><a href="bibliography.html">Bibliography</a></li>
+    </ul>
+    <div id="Square">
+       <h1>Homepage</h1>
+        <p>
+        Need any help for your travel's?
+        Well you're in luck!
+        
+        Welcome to Bee Travel's, where we give you ideas on your next destination.
+        
+        Travelling can be a difficult task for some and with endless possibilities, the decision can be tough. With Bee Travel's we give you the knowledge on the cities you need to travel to next year.
+        </p> 
+    </div>
+    
+    <div style="text-align:center">
+        <h2>Montréal Picture Gallery Of The City</h2>
+        <p>Click on the images below to view the city:</p>
+      </div>
+      
+      <div class="row">
+        <div class="column">
+          <img src="Phtos FinalProject/vieuxportdemontreal.png" id="images2" alt="OldPortOfMontréal" style="width:100%" onclick="transformImg(this);">
+        </div>
+        <div class="column">
+          <img src="Phtos FinalProject/Dowtown Montreal.png" id="images2" alt="DowntownMontréal" style="width:100%" onclick="transformImg(this);">
+        </div>
+        <div class="column">
+          <img src="Phtos FinalProject/overview of the city.png" id="images2" alt="OverviewOfTheCity" style="width:100%" onclick="transformImg(this);">
+        </div>
+        </div>
+      
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      
+    
+      
+    <script>
+        var navi = document.getElementById("nav-bar");
+        
+        
+        
+        function transformImg(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+        </script>
+      
+      
+    <div class = "footer">
+     <img alt="logo" src="Phtos FinalProject/FINALPROJECTLOGO.png" id="logo"></a>    
+    <ul style="list-style-type: none;">
+    <li><b>Email:</b> 123-456-7890<br></li>
+    <li><b>Phone Number:</b> StaceyBee@gmail.com</li>
+   
+   <li>If you have any further questions, please reach out!</li> 
+  
+  
+</ul>
+  
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+
+</div>
+      
+    
+</footer>
+</body>
+</html>

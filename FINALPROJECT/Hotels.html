@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hotels</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="Square">
+<p><b>Sofitel</b><br>     
+Sofitel is a popular hotel downtown Montréal. The prices are reasonable at around 178$ per night. It is well located close to the metro station that travels you around the city for really cheap.
+</p>
+<div><img src="Phtos FinalProject/Capture.JPG"></div></div>
+
+<div id="Square2">
+<p><b>Hotel Place d’Armes Old Montréal</b><br>
+This hotel is on the more expensive side. It is around 300$ per night. The hotel is a 3 minute walk from the Palais des Congres. It is located downtown and close to a metro station. It is an older building in Montréeal. It has great service and staff.
+</p>
+<div><img src="Phtos FinalProject/place darme.png"></div>
+</div>
+
+<div><a href="TravelPage.html"><img alt="logo" src="Phtos FinalProject/FINALPROJECTLOGO.png" id="logo"></a></div>
+
+
+
+<button onclick="gototopFunction()" id="buttonstyle" title="Go to top">Click to go back to the top!</button>
+
+    <script>
+
+let scrollupbutton = document.getElementById("buttonstyle");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollupbutton.style.display = "block";
+  } else {
+    scrollupbutton.style.display = "none";
+  }
+}
+
+
+function gototopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+</html>
